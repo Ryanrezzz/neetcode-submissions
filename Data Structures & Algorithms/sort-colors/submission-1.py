@@ -1,0 +1,31 @@
+class Solution:
+   def sortColors(self, nums: List[int]) -> None:
+      zero= nums.count(0)
+      ones= nums.count(1)
+      one=zero+ones
+      twos= nums.count(2)
+      two=one+twos
+      for i in range(len(nums)):
+         if i < zero:
+            nums[i]= 0
+         elif  i<one:
+            nums[i]=1
+         elif i<two:
+            nums[i]=2
+      # l=0
+      # r=len(nums)-1
+      # for i in range(len(nums)):
+      #    if nums[i]<1:
+      #       nums[l]=nums[i]
+      #       l=l+1
+      #    if nums[i]==1:
+      #       nums[l]=nums[i]
+      #       l=l+1
+      #    else:
+      #       nums[r]=nums[i]
+      #       r=r-1
+         
+
+
+
+        
